@@ -1,0 +1,219 @@
+[0m02:28:07.605645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CC03C06E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CBDE4DD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CC1217D90>]}
+
+
+============================== 02:28:07.617808 | bf6691b1-2a1a-45c4-9732-749468719e33 ==============================
+[0m02:28:07.617808 [info ] [MainThread]: Running with dbt=1.10.8
+[0m02:28:07.619038 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt init bikestore_project', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m02:28:07.690159 [debug] [MainThread]: Starter project path: C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m02:28:07.874091 [info ] [MainThread]: 
+Your new dbt project "bikestore_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:28:07.875781 [info ] [MainThread]: Setting up your profile.
+[0m02:28:21.587146 [error] [MainThread]: Encountered an error:
+
+[0m02:28:21.660514 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m02:28:21.664361 [debug] [MainThread]: Command `dbt init` failed at 02:28:21.664122 after 14.31 seconds
+[0m02:28:21.665031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CC12A8E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CC23A8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CC10C5150>]}
+[0m02:28:21.666376 [debug] [MainThread]: Flushing usage events
+[0m02:28:22.285857 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:14:21.584722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EE69AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EE69690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EE68850>]}
+
+
+============================== 20:14:21.626700 | 77cde21b-163c-43ce-8518-76f45b87d813 ==============================
+[0m20:14:21.626700 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:14:21.628659 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'no_print': 'None', 'printer_width': '80', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m20:14:21.734139 [info ] [MainThread]: dbt version: 1.10.13
+[0m20:14:21.736121 [info ] [MainThread]: python version: 3.11.9
+[0m20:14:21.737117 [info ] [MainThread]: python path: I:\Projects\bike_store_project\venv\Scripts\python.exe
+[0m20:14:21.738118 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m20:14:21.751138 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m20:14:21.758138 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m20:14:21.764138 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m20:14:21.768139 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m20:14:21.773120 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m20:14:21.775120 [info ] [MainThread]: Using profiles dir at C:\Users\Abo Gouda\.dbt
+[0m20:14:21.777118 [info ] [MainThread]: Using profiles.yml file at C:\Users\Abo Gouda\.dbt\profiles.yml
+[0m20:14:21.778117 [info ] [MainThread]: Using dbt_project.yml file at I:\Projects\bike_store_project\dbt_project.yml
+[0m20:14:21.780124 [info ] [MainThread]: Configuration:
+[0m20:14:21.781117 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m20:14:21.782123 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:14:21.784126 [info ] [MainThread]: Required dependencies:
+[0m20:14:21.785123 [debug] [MainThread]: Executing "git --help"
+[0m20:14:21.860994 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:14:21.862018 [debug] [MainThread]: STDERR: "b''"
+[0m20:14:21.864001 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:14:21.864994 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m20:14:21.866003 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m20:14:21.867012 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "bikestore_dwh", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dbt_learn", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dwh_Project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "final_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "my_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m20:14:21.869995 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <I:\Projects\bike_store_project\dbt_project.yml> not found
+
+[0m20:14:21.871996 [debug] [MainThread]: Command `dbt debug` failed at 20:14:21.871996 after 0.44 seconds
+[0m20:14:21.873016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EF53DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EF53F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001294EF53B90>]}
+[0m20:14:21.874016 [debug] [MainThread]: Flushing usage events
+[0m20:14:23.230233 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:55:04.368746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA7C2E06E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA79D5DD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA7D13BD90>]}
+
+
+============================== 00:55:04.422669 | ef335550-c826-4bfd-9cbe-5cb91e8490de ==============================
+[0m00:55:04.422669 [info ] [MainThread]: Running with dbt=1.10.8
+[0m00:55:04.423952 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m00:55:04.490348 [info ] [MainThread]: dbt version: 1.10.8
+[0m00:55:04.491363 [info ] [MainThread]: python version: 3.13.3
+[0m00:55:04.492199 [info ] [MainThread]: python path: C:\Users\Abo Gouda\AppData\Local\Programs\Python\Python313\python.exe
+[0m00:55:04.492970 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m00:55:05.913700 [info ] [MainThread]: Using profiles dir at C:\Users\Abo Gouda\.dbt
+[0m00:55:05.914623 [info ] [MainThread]: Using profiles.yml file at C:\Users\Abo Gouda\.dbt\profiles.yml
+[0m00:55:05.915391 [info ] [MainThread]: Using dbt_project.yml file at I:\Projects\bike_store_project\dbt_project.yml
+[0m00:55:05.916376 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:55:05.919007 [debug] [MainThread]: Command `dbt debug` failed at 00:55:05.918766 after 1.82 seconds
+[0m00:55:05.919693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA0F315F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA0F31BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA0F262690>]}
+[0m00:55:05.920422 [debug] [MainThread]: Flushing usage events
+[0m00:55:06.640709 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:58:56.509514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001711EA19AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001711A98D4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001711EA184D0>]}
+
+
+============================== 00:58:56.517343 | da5993e9-5bdf-4c23-ad7a-655ecab4cf52 ==============================
+[0m00:58:56.517343 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:58:56.519346 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'use_colors': 'True', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m00:58:56.557271 [info ] [MainThread]: dbt version: 1.10.13
+[0m00:58:56.558271 [info ] [MainThread]: python version: 3.11.9
+[0m00:58:56.559257 [info ] [MainThread]: python path: I:\Projects\bike_store_project\venv\Scripts\python.exe
+[0m00:58:56.560270 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m00:58:56.574269 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:58:56.581251 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:58:56.588258 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:58:56.592250 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:58:56.598259 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:58:56.601252 [info ] [MainThread]: Using profiles dir at C:\Users\Abo Gouda\.dbt
+[0m00:58:56.602250 [info ] [MainThread]: Using profiles.yml file at C:\Users\Abo Gouda\.dbt\profiles.yml
+[0m00:58:56.604253 [info ] [MainThread]: Using dbt_project.yml file at I:\Projects\bike_store_project\dbt_project.yml
+[0m00:58:56.605262 [info ] [MainThread]: Configuration:
+[0m00:58:56.606254 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:58:56.608255 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:58:56.609252 [info ] [MainThread]: Required dependencies:
+[0m00:58:56.611255 [debug] [MainThread]: Executing "git --help"
+[0m00:58:56.684270 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:58:56.685270 [debug] [MainThread]: STDERR: "b''"
+[0m00:58:56.686270 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:58:56.687254 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:58:56.689257 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:58:56.690256 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "bikestore_dwh", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dbt_learn", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dwh_Project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "final_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "my_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m00:58:56.693249 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <I:\Projects\bike_store_project\dbt_project.yml> not found
+
+[0m00:58:56.695271 [debug] [MainThread]: Command `dbt debug` failed at 00:58:56.695271 after 0.32 seconds
+[0m00:58:56.696271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017118116A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001711EA24A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001711EA73410>]}
+[0m00:58:56.697272 [debug] [MainThread]: Flushing usage events
+[0m00:58:57.882544 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:31:58.419787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DCE506E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DA8CDD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DDCB3D90>]}
+
+
+============================== 21:31:58.478547 | 412054df-eeed-408f-b82a-b3ca339b3216 ==============================
+[0m21:31:58.478547 [info ] [MainThread]: Running with dbt=1.10.8
+[0m21:31:58.479897 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m21:31:58.480776 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path I:\Projects\bike_store_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:31:58.482832 [debug] [MainThread]: Command `dbt run` failed at 21:31:58.482615 after 0.36 seconds
+[0m21:31:58.483466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DDB8F230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DDB7BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242DDB54C00>]}
+[0m21:31:58.484115 [debug] [MainThread]: Flushing usage events
+[0m21:31:59.909521 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:22.763886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029597A246E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295954ADD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029598887D90>]}
+
+
+============================== 23:55:22.784332 | 3d9d11e3-1f52-45fc-bbee-ab7af6a88822 ==============================
+[0m23:55:22.784332 [info ] [MainThread]: Running with dbt=1.10.8
+[0m23:55:22.785503 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run --select Fact_Sales', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\Abo Gouda\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m23:55:22.796040 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path I:\Projects\bike_store_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:55:22.798147 [debug] [MainThread]: Command `dbt run` failed at 23:55:22.797862 after 0.32 seconds
+[0m23:55:22.799148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002959875F230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002959874BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029598724C00>]}
+[0m23:55:22.800211 [debug] [MainThread]: Flushing usage events
+[0m23:55:23.562865 [debug] [MainThread]: An error was encountered while trying to flush usage events
