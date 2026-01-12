@@ -1,0 +1,13 @@
+# dbt profile
+profiles.yml
+
+# Environment variables
+.env
+
+# Dagster
+dagster_home/
+dagster.yaml
+
+# dbt generated folders
+target/
+logs/
